@@ -4,6 +4,7 @@
   box-sizing: border-box;
   background-color: #000000;
   color: white;
+  scroll-behavior: smooth;
 }
 .body {
   font-family: "Nunito", sans-serif;
@@ -101,7 +102,7 @@ section {
 
 .hero-section .school-img {
   width: 500px;
-  height: 400px;
+  height: 450px;
   object-fit: cover;
   margin: 0 20px;
   border-radius: 100px 10px 100px 10px;
@@ -456,4 +457,79 @@ section {
   border-top: 5px solid rgb(30, 32, 41);
   bottom: 0;
   width: 100%;
+}
+.primaryButton {
+  background-color: transparent;
+  
+  padding: 10px 20px;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  font-family: "Story Script", sans-serif;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: #0e7fb0ff;
+  color: white;
+  border: none;
+
+
+  & a {
+    background-color: #0e7fb0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+  }
+}
+.primaryButton:hover {
+  transform: scale(1.1);
+  background-color: #0b5c80ff;
+
+  & a {
+    background-color: #0b5c80ff;
+  }
+}
+.outlineButton {
+  background-color: transparent;
+  
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  color: white;
+  font-size: 20px;
+  font-family: "Story Script", sans-serif;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  & a {
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    
+  }
+}
+.outlineButton:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: black;
+
+  & a {
+    background-color: white;
+    color: black;
+  }
+}
+.CTA_home {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
 }
