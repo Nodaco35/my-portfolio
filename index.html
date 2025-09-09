@@ -311,8 +311,8 @@
               <span class="time__duration">4/2025</span>
             </div>
             <div class="CTA">
-              <button class="viewDetail">View Detail</button>
-              <a class="viewRepo" href="https://github.com/Nodaco35/prj301-assm" target="_blank" >View Github Repo</a>
+              <button class="viewDetail" onclick="handleClickOpen('modal-project_1')">View Detail</button>
+              <a class="viewRepo" href="https://github.com/Nodaco35/prj301-assm" target="_blank">View Github Repo</a>
             </div>
           </div>
         </div>
@@ -336,8 +336,8 @@
               <span class="time__duration">8/2025</span>
             </div>
             <div class="CTA">
-              <button class="viewDetail">View Detail</button>
-              <a class="viewRepo" href="https://github.com/nvdekay/stock-master" target="_blank" >View Github Repo</a>
+              <button class="viewDetail" onclick="handleClickOpen('modal-project_2')">View Detail</button>
+              <a class="viewRepo" href="https://github.com/nvdekay/stock-master" target="_blank">View Github Repo</a>
             </div>
           </div>
         </div>
@@ -363,8 +363,9 @@
               <span class="time__duration">8/2025</span>
             </div>
             <div class="CTA">
-              <button class="viewDetail">View Detail</button>
-              <a class="viewRepo" href="https://github.com/Nodaco35/swp391-clubs-management" target="_blank" >View Github Repo</a>
+              <button class="viewDetail" onclick="handleClickOpen('modal-project_3')">View Detail</button>
+              <a class="viewRepo" href="https://github.com/Nodaco35/swp391-clubs-management" target="_blank">View Github
+                Repo</a>
             </div>
           </div>
         </div>
@@ -388,8 +389,8 @@
               <span class="time__duration">9/2025</span>
             </div>
             <div class="CTA">
-              <button class="viewDetail">View Detail</button>
-              <a class="viewRepo" href="https://github.com/nvdekay/habit-tracker" target="_blank" >View Github Repo</a>
+              <button class="viewDetail" onclick="handleClickOpen('modal-project_4')">View Detail</button>
+              <a class="viewRepo" href="https://github.com/nvdekay/habit-tracker" target="_blank">View Github Repo</a>
             </div>
           </div>
         </div>
@@ -399,7 +400,153 @@
 
   </div>
 
-  <div class="footer"></div>
+  <div class="footer">
+    <p>© 2024 Ngô Doãn Cường. All rights reserved.</p>
+  </div>
+
+  <!-- The Modal for Project 1 -->
+  <div id="modal-project_1_container">
+    <div class="modal-content" id="modal-project_1">
+      <span class="close"
+        onclick="document.getElementById('modal-project_1').style.display='none';document.getElementById('modal-project_1_container').style.display='none';">&times;</span>
+      <h2 class="modal_title">Hệ thống Quản lý Đăng kiểm Khí thải Xe máy</h2>
+      <p>
+        Ứng dụng hỗ trợ người dùng đăng ký kiểm định khí thải xe máy và quản lý kết quả kiểm tra của cơ sở kiểm
+        định, công nhân và cảnh sát giao thông
+      </p>
+      <h3>Features:</h3>
+      <ul>
+        <li>Người dùng có thể đăng ký kiểm định khí thải xe máy</li>
+        <li>Cơ sở kiểm định có thể quản lý các đăng ký và kết quả kiểm tra</li>
+        <li>Công nhân có thể thực hiện kiểm tra và cập nhật kết quả</li>
+        <li>Cảnh sát giao thông có thể xem kết quả kiểm tra của các xe máy</li>
+      </ul>
+      <h3>Technologies Used:</h3>
+      <ul>
+        <li>Servlet - JSP</li>
+        <li>JDBC</li>
+        <li>SQL Server</li>
+      </ul>
+      <h3>Duration:</h3>
+      <p>January 2025 - April 2025</p>
+      <h3>Team Members: 3 members</h3>
+      <h3>Role: Tech Lead & Leader</h3>
+      <ul>
+        <li>Làm trưởng nhóm: chia công việc, vẽ luồng hoạt động chương trình
+        </li>
+        <li>Phân tích và chỉnh sửa cơ sở dữ liệu (thêm logic ràng buộc và chuẩn hóa)</li>
+        <li>Xây dựng các chức năng backend đầu tiên như đăng nhập, quản lý đăng ký xe, kiểm tra khí thải</li>
+        <li>Áp dụng kiến trúc MVC và viết các filter phân quyền cho các vai trò</li>
+      </ul>
+      <h3>What I Learned</h3>
+      <p>Là dự án đầu tiên giúp làm quen với cách backend vận hành, thao tác với DB, và phối hợp nhóm</p>
+    </div>
+  </div>
+
+  <!-- The Modal for Project 2 -->
+  <div id="modal-project_2_container">
+    <div class="modal-content" id="modal-project_2">
+      <span class="close"
+        onclick="document.getElementById('modal-project_2').style.display='none';document.getElementById('modal-project_2_container').style.display='none';">&times;</span>
+      <h2 class="modal_title">Hệ thống quản lý kho vận</h2>
+      <p>
+        Ứng dụng giúp quản lý sản phẩm, kho, đơn hàng nhập/xuất cho doanh nghiệp. Đồng thời giúp các nhà buôn bán nhỏ lẻ có thể tiếp cận mua hàng với nguồn hàng có giá gốc từ kho doanh nghiệp
+      </p>
+      <h3>Features:</h3>
+      <ul>
+        <li>Người dùng đăng ký tài khoản và mua hàng với số lượng lớn</li>
+        <li>Kho hàng có thể quản đơn các đơn nhập/xuất hàng và các hàng tồn trong khoá</li>
+        <li>Nhân viên có thể quản lý - báo cáo lại tình hình nhập xuất hàng trong kho</li>
+      </ul>
+      <h3>Technologies Used:</h3>
+      <ul>
+        <li>ReactJS</li>
+        <li>JSON-SERVER</li>
+      </ul>
+      <h3>Duration:</h3>
+      <p>July 2025 - August 2025</p>
+      <h3>Team Members: 6 members</h3>
+      <h3>Role: Leader</h3>
+      <ul>
+        <li>Làm trưởng nhóm: chia công việc
+        </li>
+        <li>Thực hiện các chức năng liên quan đến người dùng mua sỉ/buôn</li>
+        <li>Thiết kế Database</li>
+      </ul>
+      <h3>What I Learned</h3>
+      <p>Là dự án đầu tiên sử dụng ReactJS nên đã đem lại cho tôi kinh nghiệm và hiểu biết cơ bản khi làm việc với ReactJS</p>
+    </div>
+  </div>
+
+  <!-- The Modal for Project 3 -->
+  <div id="modal-project_3_container">
+    <div class="modal-content" id="modal-project_3">
+      <span class="close"
+        onclick="document.getElementById('modal-project_3').style.display='none';document.getElementById('modal-project_3_container').style.display='none';">&times;</span>
+      <h2 class="modal_title">ClubManagementSystem – Quản lý câu lạc bộ sinh viên</h2>
+      <p>
+        Ứng dụng giúp nhà trường và các câu lạc quản lý câu lạc bộ trong nội bộ Trường đại học: đăng ký câu lạc bộ, phê duyệt, phản hồi, quản lý thành viên, đăng ký tổ chức sự kiện, thông báo lịch họp, nhắc nhở deadline,...
+      </p>
+      <h3>Features:</h3>
+      <ul>
+        <li>Nhà trường có thể duyệt để các yêu cầu tạo các Câu lạc bộ, tổ chức sự kiện nội bộ/ngoài trường</li>
+        <li>Câu lạc bộ sẽ có chia ra các chức năng như: Chủ nhiệm có thể quản lý thành viên, tạo - giao nhiệm vụ cho thành viên trong sự kiện, tổ chức cuộc họp, quản lý thành viên, tạo báo cáo hẳng kỳ gửi cho nhà trường ...; Thành viên có thể đăng ký hoạt động trong kỳ, đăng ký tham gia sự kiện nội bộ trong câu lạc bộ</li>
+        <li>Người dùng có thể đăng ký tham gia sự kiện, câu lạc bộ, xem thông tin các câu lạc bộ,....</li>
+      </ul>
+      <h3>Technologies Used:</h3>
+      <ul>
+        <li>Servlet - JSP</li>
+        <li>JDBC</li>
+        <li>MySQL</li>
+      </ul>
+      <h3>Duration:</h3>
+      <p>May 2025 - August 2025</p>
+      <h3>Team Members: 6 members</h3>
+      <h3>Role: Leader</h3>
+      <ul>
+        <li>Làm trưởng nhóm: chia công việc</li>
+        <li>Thiết kế kiến trúc backend, phân quyền người dùng (Sinh Viên, chủ nhiệm, IC, trưởng ban)</li>
+        <li>Làm việc với JSP để xây dựng giao diện động theo role</li>
+        <li>Viết các luồng Servlet xử lý logic: xét duyệt CLB, lịch sử hoạt động,...</li>
+        <li>Phân tích các luồng chương trình, các chức năng cho các thành viên</li>
+        <li>Quản lý merge code cho dự án</li>
+      </ul>
+      <h3>What I Learned</h3>
+      <p>Là dự án lớn với đòi hỏi nghiệp vụ cao. Qua đó có thể học hỏi thêm về các vận hành/làm 1 dự án thực tế, có thêm kiến thức về viết tài liệu RDS, SRS...</p>
+    </div>
+  </div>
+
+  <!-- The Modal for Project 4 -->
+  <div id="modal-project_4_container">
+    <div class="modal-content" id="modal-project_4">
+      <span class="close"
+        onclick="document.getElementById('modal-project_4').style.display='none';document.getElementById('modal-project_4_container').style.display='none';">&times;</span>
+      <h2 class="modal_title">HabitTracker – Quản lý thói quen</h2>
+      <p>
+        Ứng dụng giúp người dùng quản lý thói quen (Habits) và mục tiêu (Goals) hằng ngày, giúp cải thiện và xây dựng những thói quen tốt hơn, nâng cao hiệu suất làm việc và chất lượng cuộc sống.
+      </p>
+      <h3>Features:</h3>
+      <ul>
+        <li>Người dùng có thể xem các thói quen, tạo các thói quen đa dạng về tần suất</li>
+        <li>Người dùng có thể tạo các mục tiêu dài hạn: gồm 2 loại mục tiêu đó là manual và auto, giúp đa dạng hoá cách thức thực hiện mục tiêu dài hàn</li>
+        <li>Người dùng có thể checkin các thói quen hàng ngày, nhận được thông báo các thói quen trong 2 giờ sắp tới. Đối với thói quen nằm trong Mục tiêu, thói quen sẽ nằm trong cụm mục tiêu đó, giúp cho người dùng dễ dàng theo dõi mục tiêp</li>
+      </ul>
+      <h3>Technologies Used:</h3>
+      <ul>
+        <li>Servlet - JSP</li>
+        <li>JDBC</li>
+        <li>MySQL</li>
+      </ul>
+      <h3>Duration:</h3>
+      <p>May 2025 - August 2025</p>
+      <h3>Team Members: 6 members</h3>
+      <h3>Role: Member</h3>
+      <ul>
+        <li>Làm chức năng tạo, xem, sửa, xoá Mục tiêu, chia mục tiêu ra thành các loại, từ đó giúp người dùng sử dụng tối ưu hơn</li>
+        
+      </ul>
+    </div>
+  </div>
 </body>
 <script>
   function scrollToSection(id) {
@@ -445,6 +592,15 @@
 
   // Bắt đầu chạy
   typeEffect();
+
+  function handleClickOpen(modalId) {
+    const modal = document.getElementById(modalId);
+    const modalContainer = document.getElementById(modalId + "_container");
+    if (modal) {
+      modal.style.display = "block";
+      modalContainer.style.display = "block";
+    }
+  }
 </script>
 
 </html>
