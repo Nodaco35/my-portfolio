@@ -18,8 +18,9 @@
 </head>
 
 <body>
-  <div class="header-container">
-    <div class="header">
+  <!-- HEADER -->
+  <header>
+    <nav class="header">
       <div class="logo">
         <img src="src/images/myLogo.png" alt="My Logo Image" class="logo" />
       </div>
@@ -34,12 +35,14 @@
           My Projects
         </button>
       </nav>
-    </div>
-  </div>
+    </nav>
+  </header>
 
-  <div class="body">
+  <!-- MAIN CONTENT -->
+  <main class="body">
     <section class="home" id="home">
       <div class="hero-section">
+        <!-- LEFT CONTENT -->
         <div class="big-hello">
           <h2 class="h2">Tôi là</h2>
           <h2 id="typing-text" class="typing h2"></h2>
@@ -52,230 +55,354 @@
             áp dụng kiến thức đã học và đóng góp vào sự phát triển của công
             ty.
           </p>
+
+
           <div class="CTA_home">
             <div class="primaryButton"><a href="src/images/CV_Resume.pdf" target="_blank" download="">Tải CV</a></div>
-            
+
             <div class="outlineButton"><a href="#my-projects">Xem dự án</a></div>
           </div>
 
         </div>
+        <!-- RIGHT CONTENT : image-->
         <div class="hero-section__img">
           <img src="src/images/myImg_2.jpg" alt="My Image" class="school-img" />
         </div>
       </div>
     </section>
+
+    <!-- ABOUT ME -->
     <section class="about-me" id="about-me">
-      <div class="section__title">About me</div>
+      <h2 class="section__title">About me</h2>
       <div class="about-me__content">
+        <!-- LEFT CONTENT : image-->
         <div class="about-me__content__img">
           <img src="src/images/myImg.jpg" alt="My Image" class="my-img" />
         </div>
+
         <div class="about-me__content__info">
-          <div class="about-me__content__info__element">
-            Name:
+          <!-- General Information -->
+          <div class="about-me__content__info__element general-information">
+            <h3>Name:</h3>
             <span class="zoom-text">Ngô Doãn Cường</span>
           </div>
-          <div class="about-me__content__info__element">
-            Date of birth:
+          <div class="about-me__content__info__element general-information">
+            <h3>Date of birth:</h3>
             <span class="zoom-text">30 - 05 - 2004 🐵</span>
           </div>
-          <div class="about-me__content__info__element">
-            University:
+          <div class="about-me__content__info__element general-information">
+            <h3>University:</h3>
             <span class="zoom-text">Đại học FPT <img src="src/images/icons/fpt-university_icon.png"
                 alt="Đại học FPT"></span>
           </div>
-          <div class="about-me__content__info__element">
-            Location:
+          <div class="about-me__content__info__element general-information">
+            <h3>Location:</h3>
             <span class="zoom-text">
               HaNoi - Vietnam
               <img src="src/images/vietnam.png" alt="vietnameseFlag" class="flag" />
             </span>
           </div>
-          <div class="about-me__content__info__element">Skill:</div>
+
+          <!-- Skills -->
+          <div class="about-me__content__info__element">
+            <h3>Skill:</h3>
+          </div>
           <div class="skills_container">
             <div class="skills-wrapper">
-              <div class="skills-row">
-                <div class="skill">
-                  <img src="./src/images/icons/html_icon.png" alt="html" />
-                  HTML
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/css_icon.png" alt="css" /> CSS
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/tailwindcss_icon.png" alt="" />
-                  TailwindCSS
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/js_icon.png" alt="js" />JavaScript
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/reactjs_icon.png" alt="reactjs" />ReactJS
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/ts_icon.png" alt="ts" />TypeScript
-                </div>
+              <!-- ROW 1: Left to Right -->
+              <ul class="skills-row">
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/html_icon.png" alt="html" />
+                    <figcaption>HTML</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/css_icon.png" alt="css" />
+                    <figcaption>CSS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/tailwindcss_icon.png" alt="" />
+                    <figcaption>TailwindCSS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/js_icon.png" alt="js" />
+                    <figcaption>JavaScript</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/reactjs_icon.png" alt="reactjs" />
+                    <figcaption>ReactJS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/ts_icon.png" alt="ts" />
+                    <figcaption>TypeScript</figcaption>
+                  </figure>
+                </li>
 
-                <div class="skill">
-                  <img src="./src/images/icons/html_icon.png" alt="html" />
-                  HTML
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/css_icon.png" alt="css" /> CSS
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/tailwindcss_icon.png" alt="" />
-                  TailwindCSS
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/js_icon.png" alt="js" />JavaScript
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/reactjs_icon.png" alt="reactjs" />ReactJS
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/ts_icon.png" alt="ts" />TypeScript
-                </div>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/html_icon.png" alt="html" />
+                    <figcaption>HTML</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/css_icon.png" alt="css" />
+                    <figcaption>CSS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/tailwindcss_icon.png" alt="" />
+                    <figcaption>TailwindCSS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/js_icon.png" alt="js" />
+                    <figcaption>JavaScript</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/reactjs_icon.png" alt="reactjs" />
+                    <figcaption>ReactJS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/ts_icon.png" alt="ts" />
+                    <figcaption>TypeScript</figcaption>
+                  </figure>
+                </li>
 
-                <div class="skill">
-                  <img src="./src/images/icons/html_icon.png" alt="html" />
-                  HTML
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/css_icon.png" alt="css" /> CSS
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/tailwindcss_icon.png" alt="" />
-                  TailwindCSS
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/js_icon.png" alt="js" />JavaScript
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/reactjs_icon.png" alt="reactjs" />ReactJS
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/ts_icon.png" alt="ts" />TypeScript
-                </div>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/html_icon.png" alt="html" />
+                    <figcaption>HTML</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/css_icon.png" alt="css" />
+                    <figcaption>CSS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/tailwindcss_icon.png" alt="" />
+                    <figcaption>TailwindCSS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/js_icon.png" alt="js" />
+                    <figcaption>JavaScript</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/reactjs_icon.png" alt="reactjs" />
+                    <figcaption>ReactJS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/ts_icon.png" alt="ts" />
+                    <figcaption>TypeScript</figcaption>
+                  </figure>
+                </li>
 
-                <div class="skill">
-                  <img src="./src/images/icons/html_icon.png" alt="html" />
-                  HTML
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/css_icon.png" alt="css" /> CSS
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/tailwindcss_icon.png" alt="" />
-                  TailwindCSS
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/js_icon.png" alt="js" />JavaScript
-                </div>
-                <div class="skill">
-                  <img src="./src/images/icons/reactjs_icon.png" alt="reactjs" />ReactJS
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/ts_icon.png" alt="ts" />TypeScript
-                </div>
-              </div>
-              <div class="skills-row">
-                <div class="skill">
-                  <img src="src/images/icons/servlet_icon.png" alt="java" />Java
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/servlet_icon.png" alt="java" />Servlet - JSP
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/nodejs_icon.png" alt="nodejs" />NodeJS
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/express_icon.png" alt="express" />ExpressJS
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/mongoDB_icon.png" alt="mongoDB" />MongoDB
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/git_icon.png" alt="git" />Git
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/github_logo.png" alt="github" />GitHub
-                </div>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/html_icon.png" alt="html" />
+                    <figcaption>HTML</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/css_icon.png" alt="css" />
+                    <figcaption>CSS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/tailwindcss_icon.png" alt="" />
+                    <figcaption>TailwindCSS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/js_icon.png" alt="js" />
+                    <figcaption>JavaScript</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="./src/images/icons/reactjs_icon.png" alt="reactjs" />
+                    <figcaption>ReactJS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/ts_icon.png" alt="ts" />
+                    <figcaption>TypeScript</figcaption>
+                  </figure>
+                </li>
+              </ul>
+              <!-- ROW 2: Right to Left -->
+              <ul class="skills-row">
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/servlet_icon.png" alt="java" />
+                    <figcaption>Java</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/servlet_icon.png" alt="java" />
+                    <figcaption>Servlet - JSP</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/nodejs_icon.png" alt="nodejs" />
+                    <figcaption>NodeJS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/express_icon.png" alt="express" />
+                    <figcaption>ExpressJS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/mongoDB_icon.png" alt="mongoDB" />
+                    <figcaption>MongoDB</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/git_icon.png" alt="git" />
+                    <figcaption>Git</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/github_logo.png" alt="github" />
+                    <figcaption>GitHub</figcaption>
+                  </figure>
+                </li>
 
-                <div class="skill">
-                  <img src="src/images/icons/servlet_icon.png" alt="java" />Java
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/servlet_icon.png" alt="java" />Servlet - JSP
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/nodejs_icon.png" alt="nodejs" />NodeJS
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/express_icon.png" alt="express" />ExpressJS
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/mongoDB_icon.png" alt="mongoDB" />MongoDB
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/git_icon.png" alt="git" />Git
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/github_logo.png" alt="github" />GitHub
-                </div>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/servlet_icon.png" alt="java" />
+                    <figcaption>Java</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/servlet_icon.png" alt="java" />
+                    <figcaption>Servlet - JSP</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/nodejs_icon.png" alt="nodejs" />
+                    <figcaption>NodeJS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/express_icon.png" alt="express" />
+                    <figcaption>ExpressJS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/mongoDB_icon.png" alt="mongoDB" />
+                    <figcaption>MongoDB</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/git_icon.png" alt="git" />
+                    <figcaption>Git</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/github_logo.png" alt="github" />
+                    <figcaption>GitHub</figcaption>
+                  </figure>
+                </li>
 
-                <div class="skill">
-                  <img src="src/images/icons/servlet_icon.png" alt="java" />Java
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/servlet_icon.png" alt="java" />Servlet - JSP
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/nodejs_icon.png" alt="nodejs" />NodeJS
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/express_icon.png" alt="express" />ExpressJS
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/mongoDB_icon.png" alt="mongoDB" />MongoDB
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/git_icon.png" alt="git" />Git
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/github_logo.png" alt="github" />GitHub
-                </div>
-
-                <div class="skill">
-                  <img src="src/images/icons/servlet_icon.png" alt="java" />Java
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/servlet_icon.png" alt="java" />Servlet - JSP
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/nodejs_icon.png" alt="nodejs" />NodeJS
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/express_icon.png" alt="express" />ExpressJS
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/mongoDB_icon.png" alt="mongoDB" />MongoDB
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/git_icon.png" alt="git" />Git
-                </div>
-                <div class="skill">
-                  <img src="src/images/icons/github_logo.png" alt="github" />GitHub
-                </div>
-              </div>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/servlet_icon.png" alt="java" />
+                    <figcaption>Java</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/servlet_icon.png" alt="java" />
+                    <figcaption>Servlet - JSP</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/nodejs_icon.png" alt="nodejs" />
+                    <figcaption>NodeJS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/express_icon.png" alt="express" />
+                    <figcaption>ExpressJS</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/mongoDB_icon.png" alt="mongoDB" />
+                    <figcaption>MongoDB</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/git_icon.png" alt="git" />
+                    <figcaption>Git</figcaption>
+                  </figure>
+                </li>
+                <li class="skill">
+                  <figure>
+                    <img src="src/images/icons/github_logo.png" alt="github" />
+                    <figcaption>GitHub</figcaption>
+                  </figure>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="about-me__content__info__element">Achivement:</div>
+          <!-- Achivement and Habits -->
+          <section class="about-me__content__info__element">
+            <h3>Achivement:</h3>
+          </section>
           <div class="about-me__achivement__element">
             <img src="src/images/icons/schoolarship.png" alt="schoolarship" class="schoolarship">
             <span>Học bổng 70% toàn khoá Đại Học FPT</span>
           </div>
-          <div class="about-me__content__info__element">Hobbies</div>
+          <section class="about-me__content__info__element">
+            <h3>Hobbies</h3>
+          </section>
           <div class="about-me__hobbies">
             <div class="about-me__hobby">
               <span>💻 Programming</span>
@@ -287,13 +414,12 @@
             <div class="about-me__hobby">
               <span>🎮 Playing Game</span>
             </div>
-
-
           </div>
         </div>
     </section>
+    <!-- MY PROJECTS -->
     <section class="my-projects" id="my-projects">
-      <div class="section__title">My project</div>
+      <h2 class="section__title">My project</h2>
       <div class="myProjects__container">
 
         <!-- Project 1 -->
@@ -403,221 +529,179 @@
 
       </div>
     </section>
+    </div>
 
-  </div>
+    <!-- The Modal for Project 1 -->
+    <div id="modal-project_1_container">
+      <section class="modal-content" id="modal-project_1" role="dialog" aria-modal="true"
+        aria-labelledby="modal-project_1_title">
+        <span class="close"
+          onclick="document.getElementById('modal-project_1').style.display='none';document.getElementById('modal-project_1_container').style.display='none';">&times;</span>
+        <h2 class="modal_title" id="modal-project_1_title">Hệ thống Quản lý Đăng kiểm Khí thải Xe máy</h2>
+        <p>
+          Ứng dụng hỗ trợ người dùng đăng ký kiểm định khí thải xe máy và quản lý kết quả kiểm tra của cơ sở kiểm
+          định, công nhân và cảnh sát giao thông
+        </p>
+        <h3>Features:</h3>
+        <ul>
+          <li>Người dùng có thể đăng ký kiểm định khí thải xe máy</li>
+          <li>Cơ sở kiểm định có thể quản lý các đăng ký và kết quả kiểm tra</li>
+          <li>Công nhân có thể thực hiện kiểm tra và cập nhật kết quả</li>
+          <li>Cảnh sát giao thông có thể xem kết quả kiểm tra của các xe máy</li>
+        </ul>
+        <h3>Technologies Used:</h3>
+        <ul>
+          <li>Servlet - JSP</li>
+          <li>JDBC</li>
+          <li>SQL Server</li>
+        </ul>
+        <h3>Duration:</h3>
+        <p>January 2025 - April 2025</p>
+        <h3>Team Members: 3 members</h3>
+        <h3>Role: Tech Lead & Leader</h3>
+        <ul>
+          <li>Làm trưởng nhóm: chia công việc, vẽ luồng hoạt động chương trình
+          </li>
+          <li>Phân tích và chỉnh sửa cơ sở dữ liệu (thêm logic ràng buộc và chuẩn hóa)</li>
+          <li>Xây dựng các chức năng backend đầu tiên như đăng nhập, quản lý đăng ký xe, kiểm tra khí thải</li>
+          <li>Áp dụng kiến trúc MVC và viết các filter phân quyền cho các vai trò</li>
+        </ul>
+        <h3>What I Learned</h3>
+        <p>Là dự án đầu tiên giúp làm quen với cách backend vận hành, thao tác với DB, và phối hợp nhóm</p>
+      </section>
+    </div>
 
-  <div class="footer">
+    <!-- The Modal for Project 2 -->
+    <div id="modal-project_2_container">
+      <section class="modal-content" id="modal-project_2" role="dialog" aria-modal="true"
+        aria-labelledby="modal-project_2_title">
+        <span class="close"
+          onclick="document.getElementById('modal-project_2').style.display='none';document.getElementById('modal-project_2_container').style.display='none';">&times;</span>
+        <h2 class="modal_title" id="modal-project_2_title">Hệ thống quản lý kho vận</h2>
+        <p>
+          Ứng dụng giúp quản lý sản phẩm, kho, đơn hàng nhập/xuất cho doanh nghiệp. Đồng thời giúp các nhà buôn bán nhỏ
+          lẻ
+          có thể tiếp cận mua hàng với nguồn hàng có giá gốc từ kho doanh nghiệp
+        </p>
+        <h3>Features:</h3>
+        <ul>
+          <li>Người dùng đăng ký tài khoản và mua hàng với số lượng lớn</li>
+          <li>Kho hàng có thể quản đơn các đơn nhập/xuất hàng và các hàng tồn trong khoá</li>
+          <li>Nhân viên có thể quản lý - báo cáo lại tình hình nhập xuất hàng trong kho</li>
+        </ul>
+        <h3>Technologies Used:</h3>
+        <ul>
+          <li>ReactJS</li>
+          <li>JSON-SERVER</li>
+        </ul>
+        <h3>Duration:</h3>
+        <p>July 2025 - August 2025</p>
+        <h3>Team Members: 6 members</h3>
+        <h3>Role: Leader</h3>
+        <ul>
+          <li>Làm trưởng nhóm: chia công việc
+          </li>
+          <li>Thực hiện các chức năng liên quan đến người dùng mua sỉ/buôn</li>
+          <li>Thiết kế Database</li>
+        </ul>
+        <h3>What I Learned</h3>
+        <p>Là dự án đầu tiên sử dụng ReactJS nên đã đem lại cho tôi kinh nghiệm và hiểu biết cơ bản khi làm việc với
+          ReactJS</p>
+      </section>
+    </div>
+
+    <!-- The Modal for Project 3 -->
+    <div id="modal-project_3_container">
+      <section class="modal-content" id="modal-project_3" role="dialog" aria-modal="true"
+        aria-labelledby="modal-project_3_title">
+        <span class="close"
+          onclick="document.getElementById('modal-project_3').style.display='none';document.getElementById('modal-project_3_container').style.display='none';">&times;</span>
+        <h2 class="modal_title" id="modal-project_3_title">ClubManagementSystem – Quản lý câu lạc bộ sinh viên</h2>
+        <p>
+          Ứng dụng giúp nhà trường và các câu lạc quản lý câu lạc bộ trong nội bộ Trường đại học: đăng ký câu lạc bộ,
+          phê
+          duyệt, phản hồi, quản lý thành viên, đăng ký tổ chức sự kiện, thông báo lịch họp, nhắc nhở deadline,...
+        </p>
+        <h3>Features:</h3>
+        <ul>
+          <li>Nhà trường có thể duyệt để các yêu cầu tạo các Câu lạc bộ, tổ chức sự kiện nội bộ/ngoài trường</li>
+          <li>Câu lạc bộ sẽ có chia ra các chức năng như: Chủ nhiệm có thể quản lý thành viên, tạo - giao nhiệm vụ cho
+            thành viên trong sự kiện, tổ chức cuộc họp, quản lý thành viên, tạo báo cáo hẳng kỳ gửi cho nhà trường ...;
+            Thành viên có thể đăng ký hoạt động trong kỳ, đăng ký tham gia sự kiện nội bộ trong câu lạc bộ</li>
+          <li>Người dùng có thể đăng ký tham gia sự kiện, câu lạc bộ, xem thông tin các câu lạc bộ,....</li>
+        </ul>
+        <h3>Technologies Used:</h3>
+        <ul>
+          <li>Servlet - JSP</li>
+          <li>JDBC</li>
+          <li>MySQL</li>
+        </ul>
+        <h3>Duration:</h3>
+        <p>May 2025 - August 2025</p>
+        <h3>Team Members: 6 members</h3>
+        <h3>Role: Leader</h3>
+        <ul>
+          <li>Làm trưởng nhóm: chia công việc</li>
+          <li>Thiết kế kiến trúc backend, phân quyền người dùng (Sinh Viên, chủ nhiệm, IC, trưởng ban)</li>
+          <li>Làm việc với JSP để xây dựng giao diện động theo role</li>
+          <li>Viết các luồng Servlet xử lý logic: xét duyệt CLB, lịch sử hoạt động,...</li>
+          <li>Phân tích các luồng chương trình, các chức năng cho các thành viên</li>
+          <li>Quản lý merge code cho dự án</li>
+        </ul>
+        <h3>What I Learned</h3>
+        <p>Là dự án lớn với đòi hỏi nghiệp vụ cao. Qua đó có thể học hỏi thêm về các vận hành/làm 1 dự án thực tế, có
+          thêm
+          kiến thức về viết tài liệu RDS, SRS...</p>
+      </section>
+    </div>
+
+    <!-- The Modal for Project 4 -->
+    <div id="modal-project_4_container">
+      <section class="modal-content" id="modal-project_4" role="dialog" aria-modal="true"
+        aria-labelledby="modal-project_4_title">
+        <span class="close"
+          onclick="document.getElementById('modal-project_4').style.display='none';document.getElementById('modal-project_4_container').style.display='none';">&times;</span>
+        <h2 class="modal_title" id="modal-project_4_title">HabitTracker – Quản lý thói quen</h2>
+        <p>
+          Ứng dụng giúp người dùng quản lý thói quen (Habits) và mục tiêu (Goals) hằng ngày, giúp cải thiện và xây dựng
+          những thói quen tốt hơn, nâng cao hiệu suất làm việc và chất lượng cuộc sống.
+        </p>
+        <h3>Features:</h3>
+        <ul>
+          <li>Người dùng có thể xem các thói quen, tạo các thói quen đa dạng về tần suất</li>
+          <li>Người dùng có thể tạo các mục tiêu dài hạn: gồm 2 loại mục tiêu đó là manual và auto, giúp đa dạng hoá
+            cách
+            thức thực hiện mục tiêu dài hàn</li>
+          <li>Người dùng có thể checkin các thói quen hàng ngày, nhận được thông báo các thói quen trong 2 giờ sắp tới.
+            Đối với thói quen nằm trong Mục tiêu, thói quen sẽ nằm trong cụm mục tiêu đó, giúp cho người dùng dễ dàng
+            theo
+            dõi mục tiêp</li>
+        </ul>
+        <h3>Technologies Used:</h3>
+        <ul>
+          <li>Servlet - JSP</li>
+          <li>JDBC</li>
+          <li>MySQL</li>
+        </ul>
+        <h3>Duration:</h3>
+        <p>May 2025 - August 2025</p>
+        <h3>Team Members: 6 members</h3>
+        <h3>Role: Member</h3>
+        <ul>
+          <li>Làm chức năng tạo, xem, sửa, xoá Mục tiêu, chia mục tiêu ra thành các loại, từ đó giúp người dùng sử dụng
+            tối ưu hơn</li>
+
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
     <p>© 2024 Ngô Doãn Cường. All rights reserved.</p>
-  </div>
+  </footer>
 
-  <!-- The Modal for Project 1 -->
-  <div id="modal-project_1_container">
-    <div class="modal-content" id="modal-project_1">
-      <span class="close"
-        onclick="document.getElementById('modal-project_1').style.display='none';document.getElementById('modal-project_1_container').style.display='none';">&times;</span>
-      <h2 class="modal_title">Hệ thống Quản lý Đăng kiểm Khí thải Xe máy</h2>
-      <p>
-        Ứng dụng hỗ trợ người dùng đăng ký kiểm định khí thải xe máy và quản lý kết quả kiểm tra của cơ sở kiểm
-        định, công nhân và cảnh sát giao thông
-      </p>
-      <h3>Features:</h3>
-      <ul>
-        <li>Người dùng có thể đăng ký kiểm định khí thải xe máy</li>
-        <li>Cơ sở kiểm định có thể quản lý các đăng ký và kết quả kiểm tra</li>
-        <li>Công nhân có thể thực hiện kiểm tra và cập nhật kết quả</li>
-        <li>Cảnh sát giao thông có thể xem kết quả kiểm tra của các xe máy</li>
-      </ul>
-      <h3>Technologies Used:</h3>
-      <ul>
-        <li>Servlet - JSP</li>
-        <li>JDBC</li>
-        <li>SQL Server</li>
-      </ul>
-      <h3>Duration:</h3>
-      <p>January 2025 - April 2025</p>
-      <h3>Team Members: 3 members</h3>
-      <h3>Role: Tech Lead & Leader</h3>
-      <ul>
-        <li>Làm trưởng nhóm: chia công việc, vẽ luồng hoạt động chương trình
-        </li>
-        <li>Phân tích và chỉnh sửa cơ sở dữ liệu (thêm logic ràng buộc và chuẩn hóa)</li>
-        <li>Xây dựng các chức năng backend đầu tiên như đăng nhập, quản lý đăng ký xe, kiểm tra khí thải</li>
-        <li>Áp dụng kiến trúc MVC và viết các filter phân quyền cho các vai trò</li>
-      </ul>
-      <h3>What I Learned</h3>
-      <p>Là dự án đầu tiên giúp làm quen với cách backend vận hành, thao tác với DB, và phối hợp nhóm</p>
-    </div>
-  </div>
-
-  <!-- The Modal for Project 2 -->
-  <div id="modal-project_2_container">
-    <div class="modal-content" id="modal-project_2">
-      <span class="close"
-        onclick="document.getElementById('modal-project_2').style.display='none';document.getElementById('modal-project_2_container').style.display='none';">&times;</span>
-      <h2 class="modal_title">Hệ thống quản lý kho vận</h2>
-      <p>
-        Ứng dụng giúp quản lý sản phẩm, kho, đơn hàng nhập/xuất cho doanh nghiệp. Đồng thời giúp các nhà buôn bán nhỏ lẻ
-        có thể tiếp cận mua hàng với nguồn hàng có giá gốc từ kho doanh nghiệp
-      </p>
-      <h3>Features:</h3>
-      <ul>
-        <li>Người dùng đăng ký tài khoản và mua hàng với số lượng lớn</li>
-        <li>Kho hàng có thể quản đơn các đơn nhập/xuất hàng và các hàng tồn trong khoá</li>
-        <li>Nhân viên có thể quản lý - báo cáo lại tình hình nhập xuất hàng trong kho</li>
-      </ul>
-      <h3>Technologies Used:</h3>
-      <ul>
-        <li>ReactJS</li>
-        <li>JSON-SERVER</li>
-      </ul>
-      <h3>Duration:</h3>
-      <p>July 2025 - August 2025</p>
-      <h3>Team Members: 6 members</h3>
-      <h3>Role: Leader</h3>
-      <ul>
-        <li>Làm trưởng nhóm: chia công việc
-        </li>
-        <li>Thực hiện các chức năng liên quan đến người dùng mua sỉ/buôn</li>
-        <li>Thiết kế Database</li>
-      </ul>
-      <h3>What I Learned</h3>
-      <p>Là dự án đầu tiên sử dụng ReactJS nên đã đem lại cho tôi kinh nghiệm và hiểu biết cơ bản khi làm việc với
-        ReactJS</p>
-    </div>
-  </div>
-
-  <!-- The Modal for Project 3 -->
-  <div id="modal-project_3_container">
-    <div class="modal-content" id="modal-project_3">
-      <span class="close"
-        onclick="document.getElementById('modal-project_3').style.display='none';document.getElementById('modal-project_3_container').style.display='none';">&times;</span>
-      <h2 class="modal_title">ClubManagementSystem – Quản lý câu lạc bộ sinh viên</h2>
-      <p>
-        Ứng dụng giúp nhà trường và các câu lạc quản lý câu lạc bộ trong nội bộ Trường đại học: đăng ký câu lạc bộ, phê
-        duyệt, phản hồi, quản lý thành viên, đăng ký tổ chức sự kiện, thông báo lịch họp, nhắc nhở deadline,...
-      </p>
-      <h3>Features:</h3>
-      <ul>
-        <li>Nhà trường có thể duyệt để các yêu cầu tạo các Câu lạc bộ, tổ chức sự kiện nội bộ/ngoài trường</li>
-        <li>Câu lạc bộ sẽ có chia ra các chức năng như: Chủ nhiệm có thể quản lý thành viên, tạo - giao nhiệm vụ cho
-          thành viên trong sự kiện, tổ chức cuộc họp, quản lý thành viên, tạo báo cáo hẳng kỳ gửi cho nhà trường ...;
-          Thành viên có thể đăng ký hoạt động trong kỳ, đăng ký tham gia sự kiện nội bộ trong câu lạc bộ</li>
-        <li>Người dùng có thể đăng ký tham gia sự kiện, câu lạc bộ, xem thông tin các câu lạc bộ,....</li>
-      </ul>
-      <h3>Technologies Used:</h3>
-      <ul>
-        <li>Servlet - JSP</li>
-        <li>JDBC</li>
-        <li>MySQL</li>
-      </ul>
-      <h3>Duration:</h3>
-      <p>May 2025 - August 2025</p>
-      <h3>Team Members: 6 members</h3>
-      <h3>Role: Leader</h3>
-      <ul>
-        <li>Làm trưởng nhóm: chia công việc</li>
-        <li>Thiết kế kiến trúc backend, phân quyền người dùng (Sinh Viên, chủ nhiệm, IC, trưởng ban)</li>
-        <li>Làm việc với JSP để xây dựng giao diện động theo role</li>
-        <li>Viết các luồng Servlet xử lý logic: xét duyệt CLB, lịch sử hoạt động,...</li>
-        <li>Phân tích các luồng chương trình, các chức năng cho các thành viên</li>
-        <li>Quản lý merge code cho dự án</li>
-      </ul>
-      <h3>What I Learned</h3>
-      <p>Là dự án lớn với đòi hỏi nghiệp vụ cao. Qua đó có thể học hỏi thêm về các vận hành/làm 1 dự án thực tế, có thêm
-        kiến thức về viết tài liệu RDS, SRS...</p>
-    </div>
-  </div>
-
-  <!-- The Modal for Project 4 -->
-  <div id="modal-project_4_container">
-    <div class="modal-content" id="modal-project_4">
-      <span class="close"
-        onclick="document.getElementById('modal-project_4').style.display='none';document.getElementById('modal-project_4_container').style.display='none';">&times;</span>
-      <h2 class="modal_title">HabitTracker – Quản lý thói quen</h2>
-      <p>
-        Ứng dụng giúp người dùng quản lý thói quen (Habits) và mục tiêu (Goals) hằng ngày, giúp cải thiện và xây dựng
-        những thói quen tốt hơn, nâng cao hiệu suất làm việc và chất lượng cuộc sống.
-      </p>
-      <h3>Features:</h3>
-      <ul>
-        <li>Người dùng có thể xem các thói quen, tạo các thói quen đa dạng về tần suất</li>
-        <li>Người dùng có thể tạo các mục tiêu dài hạn: gồm 2 loại mục tiêu đó là manual và auto, giúp đa dạng hoá cách
-          thức thực hiện mục tiêu dài hàn</li>
-        <li>Người dùng có thể checkin các thói quen hàng ngày, nhận được thông báo các thói quen trong 2 giờ sắp tới.
-          Đối với thói quen nằm trong Mục tiêu, thói quen sẽ nằm trong cụm mục tiêu đó, giúp cho người dùng dễ dàng theo
-          dõi mục tiêp</li>
-      </ul>
-      <h3>Technologies Used:</h3>
-      <ul>
-        <li>Servlet - JSP</li>
-        <li>JDBC</li>
-        <li>MySQL</li>
-      </ul>
-      <h3>Duration:</h3>
-      <p>May 2025 - August 2025</p>
-      <h3>Team Members: 6 members</h3>
-      <h3>Role: Member</h3>
-      <ul>
-        <li>Làm chức năng tạo, xem, sửa, xoá Mục tiêu, chia mục tiêu ra thành các loại, từ đó giúp người dùng sử dụng
-          tối ưu hơn</li>
-
-      </ul>
-    </div>
-  </div>
+  <script src="src/js/main.js"></script>
 </body>
-<script>
-  function scrollToSection(id) {
-    const section = document.getElementById(id);
-    section.scrollIntoView({ behavior: "smooth" });
-  }
-</script>
-<script>
-  const texts = [
-    "Ngô Doãn Cường",
-    "Thực tập sinh tại H2Q Solution",
-    "Front End Developer",
-  ];
-
-  const typingElement = document.getElementById("typing-text");
-  let textIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-
-  function typeEffect() {
-    let currentText = texts[textIndex];
-
-    if (isDeleting) {
-      typingElement.textContent = currentText.substring(0, charIndex--);
-    } else {
-      typingElement.textContent = currentText.substring(0, charIndex++);
-    }
-
-    if (isDeleting && charIndex < 0) {
-      isDeleting = false;
-      textIndex = (textIndex + 1) % texts.length;
-    }
-
-    if (!isDeleting && charIndex === currentText.length + 1) {
-      isDeleting = true;
-      setTimeout(typeEffect, 1000); // dừng 1s trước khi xoá
-      return;
-    }
-
-    let speed = isDeleting ? 80 : 120;
-    setTimeout(typeEffect, speed);
-  }
-
-  // Bắt đầu chạy
-  typeEffect();
-
-  function handleClickOpen(modalId) {
-    const modal = document.getElementById(modalId);
-    const modalContainer = document.getElementById(modalId + "_container");
-    if (modal) {
-      modal.style.display = "block";
-      modalContainer.style.display = "block";
-    }
-  }
-</script>
 
 </html>
