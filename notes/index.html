@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#090d16" />
+  <meta name="description" content="Không gian đọc và tra cứu tài liệu, ghi chú kỹ thuật của Ngô Doãn Cường (Nodaco)" />
+  <title>Ghi chú kỹ thuật | Nodaco's Notes</title>
+
+  <link rel="icon" type="image/png" href="../src/images/myLogo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- GitHub Markdown Dark CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-dark.min.css" />
+
+  <!-- Highlight.js GitHub Dark Theme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" />
+
+  <!-- App Stylesheet (Mobile-First) -->
+  <link rel="stylesheet" href="notes.css" />
+</head>
+<body>
+
+  <!-- STICKY MOBILE HEADER -->
+  <header class="notes-header">
+    <div class="header-left">
+      <a href="../" class="btn-icon" title="Quay về Portfolio chính">
+        <svg viewBox="0 0 16 16"><path d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06Z"></path></svg>
+        <span>Portfolio</span>
+      </a>
+      <a href="./" class="brand">
+        <span class="brand-text">Nodaco's Notes</span>
+      </a>
+    </div>
+
+    <div class="header-right">
+      <button id="drawerToggle" class="btn-icon" type="button" aria-label="Mở danh sách ghi chú">
+        <svg viewBox="0 0 16 16"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.244a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.244a2.25 2.25 0 0 0-1.756.843l-.25.301-.25-.301A2.25 2.25 0 0 0 7.003 13H2.75a.75.75 0 0 1-.75-.75Zm14.5 9.75V2.5h-3.494c-.792 0-1.546.341-2.074.935-.38.428-.682.95-.932 1.565v6.52a3.752 3.752 0 0 1 2.25-.77Zm-8 0v-6.52c-.25-.615-.552-1.137-.932-1.565A2.784 2.784 0 0 0 4.247 2.5H1.5v9h2.75c.813 0 1.583.28 2.25.75Z"></path></svg>
+        <span>Bài viết</span>
+        <span id="notesBadge" class="badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- APP CONTAINER -->
+  <div class="app-container">
+    
+    <!-- BACKDROP CHO MOBILE DRAWER -->
+    <div id="drawerBackdrop" class="drawer-backdrop"></div>
+
+    <!-- SIDEBAR / DRAWER MENU -->
+    <aside id="notesDrawer" class="notes-drawer" aria-label="Danh sách ghi chú">
+      <div class="drawer-header">
+        <div class="drawer-title">
+          <span>📚 Tất cả ghi chú</span>
+        </div>
+        <div class="drawer-actions">
+          <button id="btnRefresh" class="btn-close" type="button" title="Làm mới danh sách">
+            <svg viewBox="0 0 16 16"><path d="M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z"></path></svg>
+          </button>
+          <button id="btnCloseDrawer" class="btn-close" type="button" title="Đóng menu">
+            <svg viewBox="0 0 16 16"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- SEARCH BAR -->
+      <div class="drawer-search">
+        <div class="search-box">
+          <svg viewBox="0 0 16 16"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path></svg>
+          <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm theo tên..." autocomplete="off" />
+        </div>
+      </div>
+
+      <!-- NOTES LIST -->
+      <ul id="notesList" class="notes-list"></ul>
+    </aside>
+
+    <!-- MAIN READER -->
+    <main class="main-reader">
+      
+      <!-- TOP ACTION BAR CHO BÀI VIẾT -->
+      <section class="note-header-bar">
+        <div class="note-meta-top">
+          <span id="noteFileBadge" class="note-file-badge">📄 Đang tải...</span>
+          <div class="note-actions">
+            <button id="btnShare" class="btn-action" type="button" title="Chia sẻ liên kết bài viết">
+              <svg viewBox="0 0 16 16"><path d="M13.5 5.5a2.5 2.5 0 1 0-4.57-1.398l-3.5 2.1a2.5 2.5 0 1 0 0 3.596l3.5 2.1A2.5 2.5 0 1 0 13.5 10.5a2.49 2.49 0 0 0-.61-.926l-3.238-1.943a2.537 2.537 0 0 0 0-1.262L12.89 4.426c.185.344.41.65.61.926Zm-11 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm11 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm0-8a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"></path></svg>
+              <span>Chia sẻ</span>
+            </button>
+            <a id="btnRawDoc" class="btn-action" href="#" target="_blank" rel="noopener noreferrer" title="Mở file trên GitHub">
+              <svg viewBox="0 0 16 16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+        <h1 id="noteDisplayTitle" class="note-display-title">Đang tải nội dung...</h1>
+      </section>
+
+      <!-- MARKDOWN RENDER WRAPPER -->
+      <section class="markdown-wrapper">
+        <div id="loadingIndicator" class="loading-box">
+          <div class="spinner"></div>
+          <p>Đang tải bài viết...</p>
+        </div>
+        <article id="markdownBody" class="markdown-body"></article>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- FLOATING ACTION BUTTON (SCROLL TO TOP) -->
+  <div class="fab-container">
+    <button id="fabScrollTop" class="fab" type="button" aria-label="Cuộn lên đầu trang" title="Lên đầu trang">
+      <svg viewBox="0 0 16 16"><path d="M3.47 7.78a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0l4.25 4.25a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018L8.75 4.56v8.69a.75.75 0 0 1-1.5 0V4.56L4.53 7.78a.75.75 0 0 1-1.06 0Z"></path></svg>
+    </button>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast"></div>
+
+  <!-- CDN LIBRARIES -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="notes.js"></script>
+</body>
+</html>

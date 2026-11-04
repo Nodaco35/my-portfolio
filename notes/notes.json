@@ -1,0 +1,17 @@
+[
+  {
+    "name": "BACKEND_DEVELOPMENT_GUIDE.md",
+    "title": "Backend Development Guide",
+    "path": "note/BACKEND_DEVELOPMENT_GUIDE.md"
+  },
+  {
+    "name": "DTO_GIAI_THICH_CHI_TIET.md",
+    "title": "DTO Giải Thích Chi Tiết",
+    "path": "note/DTO_GIAI_THICH_CHI_TIET.md"
+  },
+  {
+    "name": "GIAI_THICH_LOI_SCHOOL_LIST_FE.md",
+    "title": "Giải Thích Lỗi School List FE",
+    "path": "note/GIAI_THICH_LOI_SCHOOL_LIST_FE.md"
+  }
+]
